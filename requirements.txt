@@ -6,10 +6,12 @@ pytest-asyncio
 pydantic
 imageio
 
-
 #GCP
 google-cloud-storage
 
+#prediction
+opencv-python
+numpy
 
 #YOLO
 ultralytics
