@@ -2,7 +2,7 @@ import requests
 import json
 import base64
 
-url = "http://localhost:8000/predict/"
+url = "http://localhost:8000/detect/"
 # url2 = à récupérer après
 
 
