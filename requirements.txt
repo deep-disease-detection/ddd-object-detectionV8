@@ -1,0 +1,10 @@
+#API
+fastapi
+uvicorn
+httpx
+pytest-asyncio
+pydantic
+
+
+#YOLO
+ultralytics
