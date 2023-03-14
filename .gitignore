@@ -1,0 +1,6 @@
+.env
+.pt
+notebooks
+*.egg-info
+model
+__pycache__
