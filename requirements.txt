@@ -4,6 +4,11 @@ uvicorn
 httpx
 pytest-asyncio
 pydantic
+imageio
+
+
+#GCP
+google-cloud-storage
 
 
 #YOLO
