@@ -4,3 +4,4 @@ notebooks
 *.egg-info
 model
 __pycache__
+*.jpg
