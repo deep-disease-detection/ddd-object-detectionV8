@@ -6,7 +6,7 @@ url = "http://localhost:8000/predict/"
 url2 = "https://ddd-object-detection-unyu5blyja-ew.a.run.app/predict/"
 
 
-with open('yolov8/data/Papilloma_1547.jpg', 'rb') as f:
+with open('yolov8/data/adenovirus.jpeg', 'rb') as f:
     image = f.read()
     # transform the image into a JSON string
     image_str = base64.b64encode(image).decode("utf-8")
