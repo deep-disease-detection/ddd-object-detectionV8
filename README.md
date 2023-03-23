@@ -10,4 +10,4 @@ The most important part of using YOLOv8 for virus detection was preprocessing th
 ## The YOLOv8 model
 The model was trained on google colab using the YOLOv8 API.
 
-After 100 epochs, we reached 0,9 mAP.
+After 100 epochs, we reached 0,9 mAP on our validation dataset.
