@@ -7,3 +7,5 @@ model
 __pycache__
 .env.yaml
 yolov8/data
+ddd-ai
+data
