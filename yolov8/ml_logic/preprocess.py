@@ -329,6 +329,31 @@ def image_augmented(image_name, degree, flip_param, nbre_passage):
     )
 
 
+def dictionary_initialization(yolo_image_train_path):
+    """compute images to create for yolo training"""
+
+    dic = {}
+    nb_to_create = {}
+
+    for virus in VIRUSES:
+        dic[virus] = 0
+
+    for file in os.listdir(yolo_image_train_path):
+        ind = file.find("_")
+        virus_name = file[:ind]
+        dic[virus_name] = dic[virus_name] + 1
+
+    for virus in VIRUSES:
+        nb_to_create[virus] = 100 - dic[virus]
+
+    # removing unuseful virus
+    del nb_to_create["Influenza"]
+    del nb_to_create["Lassa"]
+    del nb_to_create["Nipah virus"]
+
+    return nb_to_create
+
+
 def new_label_documentation(file_name, file_path, rotate, flip, nbre_passage):
     particle = []
     with open(file_path, "r") as f:
